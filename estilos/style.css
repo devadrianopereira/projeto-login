@@ -30,7 +30,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        
         overflow: hidden;
 
         background-color: white;
@@ -38,7 +38,7 @@
         height: 510px;
         border-radius: 20px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.589);
-
+        transform: translate(-50%, -50%);
         transition: width .7s, heigth .3s ;
         transition-timing-function: ease;
         
@@ -72,17 +72,44 @@
 
 
     form > div.campo {
+
+        border: 1px solid #5f2c82;
         background-color: #5f2c82;
         width: 100%;
         display: block;
         height: 40px;
-        border-radius: 5px;
+        border-radius: 8px;
         margin-top: 5px;
         margin-bottom: 5px;
     }
 
    div.campo > label {
     display: none;
+   }
+
+
+   div.campo > span {
+    
+    font-size: 2em;
+    width: 40px;
+    color: white;
+    padding: 5px;
+   }
+
+   div.campo > input {
+    background-color: #3eccc7b4;
+    font-size: 1em;
+    height: 100%;
+    border-radius: 8px;
+    padding: 4px;
+    width: calc(100% - 45px);
+    transform: translateY(-13px)
+
+   }
+
+   div.campo > input:focus-within {
+    background-color: white;
+    border: none;
    }
 
 

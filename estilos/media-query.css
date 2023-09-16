@@ -18,6 +18,8 @@ grandes: 1200px pra cima
 
     section#login {
         width: 80vw;
+        height: 280px;
+
     }
 
     section#login > div#imagem {
@@ -38,6 +40,7 @@ grandes: 1200px pra cima
     
     section#login {
         width: 950px;
+        height: 360px;
     }
 
     section#login > div#imagem {
@@ -58,6 +61,7 @@ grandes: 1200px pra cima
     div#formulario > p {
         
         font-size: 1.2em;
+        margin: 20px 0px;
     
     }
 }
